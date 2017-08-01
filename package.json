@@ -48,10 +48,12 @@
     "ejs": "^2.5.2",
     "express": "^4.11.2",
     "fs": "0.0.2",
+    "grunt": "1.0.1",
+    "grunt-cli": "1.2.0",
     "shelljs": "^0.3.0"
   },
   "scripts": {
-    "heroku-prebuild": "npm install -g bower grunt grunt-cli",
+    "heroku-prebuild": "npm install -g bower",
     "preinstall": "bower install",
     "postinstall": "npm run build",
     "build": "grunt",
