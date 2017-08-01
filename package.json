@@ -50,19 +50,7 @@
     "fs": "0.0.2",
     "grunt": "1.0.1",
     "grunt-cli": "1.2.0",
-    "load-grunt-tasks": "3.5.2",
-    "shelljs": "^0.3.0"
-  },
-  "scripts": {
-    "heroku-prebuild": "npm install -g bower",
-    "preinstall": "bower install",
-    "postinstall": "grunt && npm run build",
-    "start": "node app.js",
-    "test": "./node_modules/.bin/grunt test-coveralls",
-    "clean": "git clean -dfx",
-    "rebuild": "cd bower_components/colu-copay-addon/ && grunt && cd - && grunt"
-  },
-  "devDependencies": {
+    "shelljs": "^0.3.0",
     "adm-zip": "^0.4.7",
     "angular": "1.4.6",
     "angular-mocks": "1.4.10",
@@ -99,5 +87,16 @@
     "mocha": "^2.4.5",
     "phantomjs-prebuilt": "^2.1.7",
     "xcode": "^0.8.2"
+  },
+  "scripts": {
+    "heroku-prebuild": "npm install -g bower",
+    "preinstall": "bower install",
+    "postinstall": "grunt && npm run build",
+    "start": "node app.js",
+    "test": "./node_modules/.bin/grunt test-coveralls",
+    "clean": "git clean -dfx",
+    "rebuild": "cd bower_components/colu-copay-addon/ && grunt && cd - && grunt"
+  },
+  "devDependencies": {
   }
 }
