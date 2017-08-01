@@ -55,8 +55,7 @@
   "scripts": {
     "heroku-prebuild": "npm install -g bower",
     "preinstall": "bower install",
-    "postinstall": "npm run build",
-    "build": "grunt",
+    "postinstall": "grunt && npm run build",
     "start": "node app.js",
     "test": "./node_modules/.bin/grunt test-coveralls",
     "clean": "git clean -dfx",
