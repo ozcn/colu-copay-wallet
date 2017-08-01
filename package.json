@@ -51,7 +51,8 @@
     "shelljs": "^0.3.0"
   },
   "scripts": {
-    "preinstall": "npm install -g bower && npm install -g grunt && npm install -g grunt-cli && bower install",
+    "heroku-prebuild": "npm install -g bower grunt grunt-cli",
+    "preinstall": "bower install",
     "postinstall": "npm run build",
     "build": "grunt",
     "start": "node app.js",
