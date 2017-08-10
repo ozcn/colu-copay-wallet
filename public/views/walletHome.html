@@ -302,7 +302,7 @@
               <span translate>Share address</span>
             </button>
           </div>
-          <div class="small-12 columns" ng-show="home.addr && !index.asset.isAsset">
+          <div class="small-12 columns"> <!-- ng-show="home.addr && !index.asset.isAsset" -->
             <button class="button expand small round m10b" ng-click="openAmountModal(home.addr)"
               ng-style="{'background-color':index.backgroundColor}"
               ng-disabled="home.generatingAddress">
